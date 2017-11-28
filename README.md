@@ -1,7 +1,7 @@
 # finalhourlystationdataset
 Hourly data for US stations, May-October 1981-2015.
 
-Each file contains temperature (T), specific humidity (q), and wet-bulb temperature (WBT) values for a given 2-year period. Each of these cell arrays is of dimensions 175x2, where 175 is the number of stations and 2 is simply the year -- 1 for the first year in the pair, 2 for the second.
+Each file contains temperature (T), specific humidity (q), and wet-bulb temperature (WBT) hourly values for a given 2-year period. Each of these cell arrays is of dimensions 175x2, where 175 is the number of stations and 2 is simply the year -- 1 for the first year in the pair, 2 for the second.
 
 Station names and locations are listed in the stnmetadata.mat file.
 
