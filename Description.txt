@@ -1,0 +1,36 @@
+DATA DESCRIPTION
+
+Overview
+
+This dataset contains hourly temperature (C), wet-bulb temperature (C), and specific humidity (g/kg) observational data for 175 stations approximately uniformly distributed across the contiguous United States for the period May-October, 1981-2015.
+
+
+Data were modified from hourly datasets originating from the NCDC archives, and therefore original versions (in text-file format) can be found at 
+    http://www.ncdc.noaa.gov/data-access/quick-links#dsi-3505, 
+
+with a format as described in
+    http://www1.ncdc.noaa.gov/pub/data/ish/ish-format-document.pdf. 
+
+The quality-control procedure that had already been applied at that point is 
+    http://www1.ncdc.noaa.gov/pub/data/inventories/ish-qc.pdf.
+
+
+Computation procedure
+
+After obtaining the dataset described above:
+
+1. stations with <30 years of data were eliminated
+
+2. data were read from the text files, their observation values were interpolated to standard hourly observation times (if necessary), and quality control was applied to weed out stations that had problems, viz. any one of:
+
+	a. a maximum temporal gap between observations of more than 4 hours
+
+	b. >=4 hours of invalid values (making attempts at interpolation problematic)
+
+	c. >=3% of temperature values missing
+
+
+
+Imposing these conditions, and doing further quality control to algorithmically and visually examine for highly improbable values, 
+multiple repeated values, etc. yielded the 175 stations shown here. Metadata included in this dataset are the stations’ WMO ID numbers
+(as listed in the Worldwide Station List, http://old.wetterzentrale.de/klima/stnlst.html), their names, and their latitudes and longitudes.
