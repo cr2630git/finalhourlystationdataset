@@ -2,7 +2,9 @@ DATA DESCRIPTION
 
 Overview
 
-This dataset contains hourly temperature (C), wet-bulb temperature (C), and specific humidity (g/kg) observational data for 175 stations approximately uniformly distributed across the contiguous United States for the period May-October, 1981-2015.
+This dataset contains hourly temperature (C), wet-bulb temperature (C), dewpoint (C), and specific humidity (g/kg) observational data for 175 stations approximately uniformly distributed across the contiguous United States for the period May-October, 1981-2015.
+
+Each file contains two years’ worth of data for all 175 stations. Thus, a file has 8832 hourly values for each of the four variables at each station.
 
 
 Data were modified from hourly datasets originating from the NCDC archives, and therefore original versions (in text-file format) can be found at 
